@@ -6,7 +6,7 @@ The idea is inspired from [this link](https://physics.stackexchange.com/question
 ## The proceudres
 1. Recompile the Phonon module of Quantum Espresso after inlcuding the updated write_eigenvectors.f90 and matdyn.f90 scripts
 
-2. Performing the normal modes calculation and in particular obtain the data file of normalized displacement
+2. Performing the normal modes calculation and in particular obtain the data file of normalized displacement, i.e., ch4.disp. 
 
 3. python rmass.py, this is actually the main step
 
