@@ -69,8 +69,9 @@ k, in millidyne / A
 u, reduced mass in amu 
 omega = 1302.79 *sqrt(k/u) in cm^-1
 => k = (omega/1302.79)^2 * u
-k= (freqs/1302.79)**2 * rmass
 '''
+k= (freqs/1302.79)**2 * rmass
+
 
 header = '{0:^10s}        {1:^10s}     {2:^10s} '.format('freq (cm^-1)', 'reduced mass (amu)', 'force constant (millidyne/A)')
 np.savetxt(fileout, np.column_stack([freqs, rmass, k]), fmt=['%10.3f','%16.3f','%20.3f'], header=header)
